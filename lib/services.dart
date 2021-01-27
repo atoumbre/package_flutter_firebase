@@ -3,13 +3,13 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:get/get.dart';
 import 'package:softi_common/services.dart';
 import 'package:softi_common/core.dart';
-import 'package:softi_firebase_module/src/auth/models/settings.dart';
-import 'package:softi_firebase_module/src/auth/services/firebase_auth_service.dart';
-import 'package:softi_firebase_module/src/services/firebase_deeplink_service.dart';
+import 'package:softi_firebase/src/auth/models/settings.dart';
+import 'package:softi_firebase/src/auth/services/firebase_auth_service.dart';
+import 'package:softi_firebase/src/services/firebase_deeplink_service.dart';
 
-export 'package:softi_firebase_module/src/services/firebase_deeplink_service.dart';
-export 'package:softi_firebase_module/src/services/firebase_remote_config_service.dart';
-export 'package:softi_firebase_module/src/services/firebase_storage_service.dart';
+export 'package:softi_firebase/src/services/firebase_deeplink_service.dart';
+export 'package:softi_firebase/src/services/firebase_remote_config_service.dart';
+export 'package:softi_firebase/src/services/firebase_storage_service.dart';
 
 Future<void> firebaseServiceSetup(FirebaseSettings firebaseSettings) async {
   /// Third party lib initialization

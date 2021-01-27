@@ -3,7 +3,7 @@
 // import 'package:firebase_auth/firebase_auth.dart';
 // import 'package:flutter/foundation.dart';
 // import 'package:softi_common/index.dart';
-// import 'package:softi_firebase_module/services/src/firebase_auth_service/firebase_auth_provider.dart';
+// import 'package:softi_firebase/services/src/firebase_auth_service/firebase_auth_provider.dart';
 
 // class FirebaseAuthPhone extends FirebaseAuthProvider {
 //   FirebaseAuthPhone(FirebaseAuth firebaseAuth) : super(firebaseAuth);

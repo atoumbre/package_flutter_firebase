@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:softi_common/auth.dart';
-import 'package:softi_firebase_module/src/auth/services/firebase_auth_provider.dart';
+import 'package:softi_firebase/src/auth/services/firebase_auth_provider.dart';
 
 class FirebaseAuthFacebookSignIn extends FirebaseAuthProvider {
   final String facebookClientId;

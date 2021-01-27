@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:softi_common/resource.dart';
-import 'package:softi_firebase_module/src/firestore/firebase_resource.dart';
+import 'package:softi_firebase/src/firestore/firebase_resource.dart';
 
 T fromFirestore<T extends IResourceData>(FirestoreResource<T> res, DocumentSnapshot docSnap) {
   var map = docSnap.data();

@@ -2,8 +2,8 @@ import 'dart:async';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:softi_common/resource.dart';
-import 'package:softi_firebase_module/src/firestore/firebase_desirializer.dart';
-import 'package:softi_firebase_module/src/firestore/firebase_resource.dart';
+import 'package:softi_firebase/src/firestore/firebase_desirializer.dart';
+import 'package:softi_firebase/src/firestore/firebase_resource.dart';
 
 class FirestoreCollectionService extends ICollectionService {
   FirestoreCollectionService(

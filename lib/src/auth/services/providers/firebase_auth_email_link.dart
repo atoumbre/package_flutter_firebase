@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:softi_common/auth.dart';
-import 'package:softi_firebase_module/src/auth/services/firebase_auth_provider.dart';
+import 'package:softi_firebase/src/auth/services/firebase_auth_provider.dart';
 
 class FirebaseAuthEmailLink extends FirebaseAuthProvider {
   final ActionCodeSettings actionCodeSettings;

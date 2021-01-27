@@ -2,14 +2,14 @@ import 'dart:async';
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:softi_common/auth.dart';
-import 'package:softi_firebase_module/src/auth/models/settings.dart';
-import 'package:softi_firebase_module/src/auth/services/firebase_auth_provider.dart';
-import 'package:softi_firebase_module/src/auth/services/providers/firebase_auth_apple.dart';
-import 'package:softi_firebase_module/src/auth/services/providers/firebase_auth_email.dart';
-import 'package:softi_firebase_module/src/auth/services/providers/firebase_auth_email_link.dart';
-import 'package:softi_firebase_module/src/auth/services/providers/firebase_auth_facebook.dart';
-import 'package:softi_firebase_module/src/auth/services/providers/firebase_auth_google.dart';
-import 'package:softi_firebase_module/src/auth/services/providers/firebase_auth_phone.dart';
+import 'package:softi_firebase/src/auth/models/settings.dart';
+import 'package:softi_firebase/src/auth/services/firebase_auth_provider.dart';
+import 'package:softi_firebase/src/auth/services/providers/firebase_auth_apple.dart';
+import 'package:softi_firebase/src/auth/services/providers/firebase_auth_email.dart';
+import 'package:softi_firebase/src/auth/services/providers/firebase_auth_email_link.dart';
+import 'package:softi_firebase/src/auth/services/providers/firebase_auth_facebook.dart';
+import 'package:softi_firebase/src/auth/services/providers/firebase_auth_google.dart';
+import 'package:softi_firebase/src/auth/services/providers/firebase_auth_phone.dart';
 
 class FirebaseAuthService extends IAuthService {
   final FirebaseAuth firebaseAuth;
