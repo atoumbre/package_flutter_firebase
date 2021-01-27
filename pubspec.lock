@@ -886,7 +886,7 @@ packages:
       path: "."
       ref: "v0.3"
       resolved-ref: "1dd2bd44bd7e54ec7f814561967c9779da2bde6f"
-      url: "https://b5f960e33e1c7fd9d5425ecfb9ded11dfcf1e7a1@github.com/atoumbre/softi_packages.git"
+      url: "https://b5f960e33e1c7fd9d5425ecfb9ded11dfcf1e7a1@github.com/atoumbre/package_flutter_common.git"
     source: git
     version: "0.0.1"
   source_gen:
