@@ -1,0 +1,47 @@
+name: softi_firebase_module
+description: A new Flutter package project.
+version: 0.0.1
+author:
+homepage:
+publish_to: none
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # softi_common:
+  #     path: ../package_flutter_common
+  
+  softi_common:
+    git:
+      url: https://b5f960e33e1c7fd9d5425ecfb9ded11dfcf1e7a1@github.com/atoumbre/softi_packages.git
+      ref: v0.3
+  
+  google_sign_in:
+  sign_in_with_apple:
+
+  firebase_core:
+  firebase_auth:
+  firebase_dynamic_links:
+  cloud_firestore:
+  firebase_storage:
+  firebase_remote_config:
+
+  # flutter packages pub run build_runner watch --delete-conflicting-outputs
+  # flutter packages pub run build_runner build --delete-conflicting-outputs
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  build_runner:
+  freezed:
+
+dependency_overrides:
+  intl: 0.17.0-nullsafety.2
+  extended_image: 1.5.0-dev
+  
+flutter:
+
