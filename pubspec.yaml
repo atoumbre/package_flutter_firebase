@@ -17,7 +17,7 @@ dependencies:
   
   softi_common:
     git:
-      url: https://b5f960e33e1c7fd9d5425ecfb9ded11dfcf1e7a1@github.com/atoumbre/package_flutter_common.git
+      url: https://github.com/atoumbre/package_flutter_common.git
       ref: v0.3
   
   google_sign_in:
