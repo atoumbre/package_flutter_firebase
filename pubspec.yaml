@@ -18,7 +18,7 @@ dependencies:
   softi_common:
     git:
       url: https://github.com/atoumbre/package_flutter_common.git
-      ref: v0.3
+      ref: v0.3.1
   
   google_sign_in:
   sign_in_with_apple:
@@ -40,7 +40,7 @@ dev_dependencies:
   freezed:
 
 dependency_overrides:
-  intl: 0.17.0-nullsafety.2
+  intl: ^0.17.0
   extended_image: 1.5.0-dev
   
 flutter:
