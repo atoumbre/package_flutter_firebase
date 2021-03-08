@@ -35,5 +35,6 @@ class FirebaseGoogleSignin extends FirebaseAuthProvider {
     }
   }
 
-  Future<AuthUser> signInWithGoogle() async => signInWithCredential(await getCredentialForGoogle());
+  Future<AuthUser> signInWithGoogle({linkToUser = false}) async =>
+      signInWithCredential(await getCredentialForGoogle(), linkToUser: linkToUser);
 }

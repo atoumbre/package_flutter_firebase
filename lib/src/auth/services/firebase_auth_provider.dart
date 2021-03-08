@@ -6,8 +6,15 @@ abstract class FirebaseAuthProvider {
 
   FirebaseAuthProvider(this.firebaseAuth);
 
-  Future<AuthUser> signInWithCredential(AuthCredential credential, {String displayName, String photoURL}) async {
-    final authResult = await firebaseAuth.signInWithCredential(credential);
+  Future<AuthUser> signInWithCredential(
+    AuthCredential credential, {
+    String displayName,
+    String photoURL,
+    linkToUser = false,
+  }) async {
+    final authResult = linkToUser
+        ? await firebaseAuth.currentUser.linkWithCredential(credential)
+        : await firebaseAuth.signInWithCredential(credential);
 
     // final firebaseUser = authResult.user;
 
@@ -16,6 +23,17 @@ abstract class FirebaseAuthProvider {
 
     return userFromFirebase(authResult);
   }
+
+  // Future<AuthUser> linkCredential(AuthCredential credential, {String displayName, String photoURL}) async {
+  //   final authResult = await firebaseAuth.currentUser.linkWithCredential(credential);
+
+  //   // final firebaseUser = authResult.user;
+
+  //   if (displayName != null) await authResult.user.updateProfile(displayName: displayName);
+  //   if (photoURL != null) await authResult.user.updateProfile(photoURL: photoURL);
+
+  //   return userFromFirebase(authResult);
+  // }
 
   static AuthUser userFromFirebase(UserCredential userCredential) {
     var user = userCredential.user;

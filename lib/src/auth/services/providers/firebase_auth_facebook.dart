@@ -29,7 +29,6 @@ class FirebaseAuthFacebookSignIn extends FirebaseAuthProvider {
     }
   }
 
-  Future<AuthUser> signInWithFacebook(dynamic context) async {
-    return signInWithCredential(await getFacebookAuthCredential(context));
-  }
+  Future<AuthUser> signInWithFacebook(dynamic context, {linkToUser = false}) async =>
+      signInWithCredential(await getFacebookAuthCredential(context), linkToUser: linkToUser);
 }

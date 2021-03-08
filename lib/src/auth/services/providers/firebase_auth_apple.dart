@@ -36,5 +36,6 @@ class FirebaseAppleSignin extends FirebaseAuthProvider {
     );
   }
 
-  Future<AuthUser> signInWithApple() async => signInWithCredential(await getCredentialForApple());
+  Future<AuthUser> signInWithApple({linkToUser = false}) async =>
+      signInWithCredential(await getCredentialForApple(), linkToUser: linkToUser);
 }

@@ -112,8 +112,8 @@ class FirebaseAuthService extends IAuthService {
   }
 
   @override
-  Future<AuthUser> signInWithApple() {
-    return catchError<AuthUser>(() => appleSignin.signInWithApple());
+  Future<AuthUser> signInWithApple({linkToUser = false}) {
+    return catchError<AuthUser>(() => appleSignin.signInWithApple(linkToUser: linkToUser));
   }
 
   @override
@@ -127,13 +127,13 @@ class FirebaseAuthService extends IAuthService {
   }
 
   @override
-  Future<AuthUser> signInWithFacebook(param) {
-    return catchError<AuthUser>(() => facebookSignin.signInWithFacebook(param));
+  Future<AuthUser> signInWithFacebook(param, {linkToUser = false}) {
+    return catchError<AuthUser>(() => facebookSignin.signInWithFacebook(param, linkToUser: linkToUser));
   }
 
   @override
-  Future<AuthUser> signInWithGoogle() {
-    return catchError<AuthUser>(() => googleSignin.signInWithGoogle());
+  Future<AuthUser> signInWithGoogle({linkToUser = false}) {
+    return catchError<AuthUser>(() => googleSignin.signInWithGoogle(linkToUser: linkToUser));
   }
 
   @override
